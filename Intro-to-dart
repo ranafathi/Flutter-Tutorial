@@ -1,0 +1,37 @@
+void main(){
+  String name = 'Rana';
+  int age = 23;
+  double height = 1.68;
+  
+  print("Hello, I'm $name");
+  //dart strings are '' or ""
+  
+  print("My name has ${name.length} letters");
+  //curly braces for interpolation
+  
+  print("I'm $age years old and $height meters tall");
+  
+  //new way to introduce variables
+  var name2 = 'Rana';
+  
+  print("Variable name is $name2");
+  //this way it is not declared as a string
+  //after it is initialized its type cannot be changed
+  //--> statically typed language!
+  
+  /////////////THE FINAL KEYWORD////////////////////
+//  final length = 1.84;
+  //every time we know a variable will not change
+  //its value it should be declared as final
+  
+//  print('$length');
+  
+  /////////////////THE DYNAMIC KEYWORD///////////////
+  //The compiler allows us to declare a variable
+  //to anything we want
+  //Only use it if we REALLY don't know what type
+  //of variable will be used!
+  dynamic length = 'Hi';
+  print('$length');
+ 
+}

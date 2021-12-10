@@ -1,0 +1,27 @@
+void main()
+{
+  var name = 'Rana';
+  var age = 23;
+  var height = 1.69;
+  
+  describe(name, age, height);
+  describe("Matt", 45, 1.89);
+  
+  //Has to be defined as final
+  final person = describeSt(name, age, height);
+  print(person);
+}
+
+//Function definition
+void describe(String name, int age, double height)
+{
+  print("My name is $name");
+  print("I'm $age years old");
+  print("I'm $height meters tall");
+}
+
+//return type String
+String describeSt(String name, int age, double height)
+{
+  return "Hello I'm $name, I'm $age years old and $height meters tall.";
+}
